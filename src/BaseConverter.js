@@ -1,5 +1,13 @@
 import React from 'react';
-import { InputBox, range } from './inputBox';
+import InputBox from './inputBox';
+
+const range = function(start, end) {
+  const list = [];
+  for (let i = start; i < end; i++) {
+    list.push(i);
+  }
+  return list;
+};
 
 class BaseConverter extends React.Component {
   constructor(props) {
