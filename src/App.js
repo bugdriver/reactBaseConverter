@@ -1,5 +1,5 @@
 import React from 'react';
-import BaseConverter from './BaseConverter';
+import BaseConverter from './components/BaseConverter';
 
 function App() {
   return <BaseConverter></BaseConverter>;
