@@ -31,7 +31,7 @@ class InputBox extends React.Component {
       this.props.onChange(parseInt(value, this.props.base));
     }
   }
-  
+
   render() {
     const { value, base } = this.props;
     const convertedValue = parseInt(value).toString(base);
