@@ -17,8 +17,7 @@ class BaseConverter extends React.Component {
   }
 
   handleChange(value) {
-    const newValue = value || 0;
-    this.setState({ value: newValue });
+    this.setState({ value });
   }
 
   render() {

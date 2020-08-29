@@ -8,7 +8,7 @@ class InputBox extends React.Component {
 
   handleChange(event) {
     const value = event.target.value;
-    const decimalValue = value && parseInt(value, this.props.base);
+    const decimalValue = value ? parseInt(value, this.props.base) : 0;
     if (!isNaN(decimalValue)) {
       this.props.onChange(decimalValue);
     }
